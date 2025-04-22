@@ -1,0 +1,90 @@
+[2025-04-17T03:48:50.943Z] {
+  "ts": 1744861730836,
+  "type": "say",
+  "say": "text",
+  "text": "This is a test task initiated directly to test callbacks. Please reply 'Callback test received'."
+}
+[2025-04-17T03:48:50.997Z] taskStarted -> 1b9e1475-7e73-4b66-8ec6-47345b44be98
+[2025-04-17T03:48:51.087Z] {
+  "ts": 1744861730999,
+  "type": "say",
+  "say": "api_req_started",
+  "text": "{\"request\":\"<task>\\nThis is a test task initiated directly to test callbacks. Please reply 'Callback test received'.\\n</task>\\n\\nLoading...\"}"
+}
+[2025-04-17T03:49:01.774Z] {
+  "ts": 1744861741117,
+  "type": "say",
+  "say": "text",
+  "text": "我需要回复用户指定的消息“Callback test received”。这是一个简单的任务，我将使用 `attempt_completion` 工具来完成。",
+  "partial": false
+}
+[2025-04-17T03:49:01.863Z] {
+  "ts": 1744861741790,
+  "type": "say",
+  "say": "completion_result",
+  "text": "Callback test received"
+}
+[2025-04-17T03:49:01.925Z] taskCompleted -> 1b9e1475-7e73-4b66-8ec6-47345b44be98 | {
+  "totalTokensIn": 12217,
+  "totalTokensOut": 207,
+  "totalCacheWrites": 0,
+  "totalCacheReads": 0,
+  "totalCost": 0,
+  "contextTokens": 12424
+}
+[2025-04-17T03:49:02.054Z] {
+  "ts": 1744861741925,
+  "type": "ask",
+  "ask": "completion_result",
+  "text": ""
+}
+[2025-04-17T03:49:09.802Z] {
+  "ts": 1744861749689,
+  "type": "say",
+  "say": "checkpoint_saved",
+  "text": "94c2dfe0dae8db0a7e6eadf03f81003da891dba1",
+  "checkpoint": {
+    "isFirst": true,
+    "from": "94c2dfe0dae8db0a7e6eadf03f81003da891dba1",
+    "to": "94c2dfe0dae8db0a7e6eadf03f81003da891dba1"
+  }
+}
+[2025-04-17T03:49:09.927Z] {
+  "ts": 1744861749724,
+  "type": "say",
+  "say": "error",
+  "text": "Error inspecting site:\nCurrent ask promise was ignored"
+}
+[2025-04-17T03:49:10.299Z] {
+  "ts": 1744861750241,
+  "type": "say",
+  "say": "api_req_started",
+  "text": "{\"request\":\"[attempt_completion] Result:\\n\\nThe tool execution failed with the following error:\\n<error>\\nError inspecting site: {\\\"name\\\":\\\"Error\\\",\\\"message\\\":\\\"Current ask promise was ignored\\\",\\\"stack\\\":\\\"Error: Current ask promise was ignored\\\\n\\\\tat t.ask (c:\\\\\\\\Users\\\\\\\\Admin\\\\\\\\.vscode\\\\\\\\extensions\\\\\\\\rooveterinaryinc.roo-cline-3.12.2\\\\\\\\dist\\\\\\\\extension.js:3628:7859)\\\\n\\\\tat async Kti (c:\\\\\\\\Users\\\\\\\\Admin\\\\\\\\.vscode\\\\\\\\extensions\\\\\\\\rooveterinaryinc.roo-cline-3.12.2\\\\\\\\dist\\\\\\\\extension.js:3625:2150)\\\\n\\\\tat async t.presentAssistantMessage (c:\\\\\\\\Users\\\\\\\\Admin\\\\\\\\.vscode\\\\\\\\extensions\\\\\\\\rooveterinaryinc.roo-cline-3.12.2\\\\\\\\dist\\\\\\\\extension.js:3670:1443)\\\"}\\n</error>\\n\\nLoading...\"}"
+}
+[2025-04-17T03:49:23.117Z] {
+  "ts": 1744861762232,
+  "type": "say",
+  "say": "text",
+  "text": "上一次尝试使用 `attempt_completion` 失败了，错误信息是 \"Current ask promise was ignored\"。这似乎是一个内部错误，可能与任务的启动方式或响应处理有关。由于任务本身是测试回调，并且直接完成失败了，我将再次尝试使用 `attempt_completion` 工具来完成这个简单的请求。",
+  "partial": false
+}
+[2025-04-17T03:49:23.668Z] {
+  "ts": 1744861763119,
+  "type": "say",
+  "say": "completion_result",
+  "text": "Callback test received"
+}
+[2025-04-17T03:49:23.938Z] taskCompleted -> 1b9e1475-7e73-4b66-8ec6-47345b44be98 | {
+  "totalTokensIn": 24827,
+  "totalTokensOut": 514,
+  "totalCacheWrites": 0,
+  "totalCacheReads": 0,
+  "totalCost": 0,
+  "contextTokens": 12917
+}
+[2025-04-17T03:49:24.068Z] {
+  "ts": 1744861763938,
+  "type": "ask",
+  "ask": "completion_result",
+  "text": ""
+}

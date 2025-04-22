@@ -1,0 +1,19 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Extension", // 调试配置的名称，会显示在下拉菜单中
+      "type": "extensionHost", // 指定调试类型为 VS Code 扩展
+      "request": "launch", // 指定请求类型为启动
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}" // 告诉 VS Code 扩展代码的位置
+      ],
+      "outFiles": [
+        "${workspaceFolder}/out/**/*.js" // 帮助调试器映射源文件和编译后的 JS 文件
+      ]
+    }
+  ]
+}
